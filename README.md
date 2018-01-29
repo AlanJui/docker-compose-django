@@ -11,7 +11,7 @@
 ### 1. 進入專案根目錄
 
 ```commandline
-cd byob-profiles-rest-api
+$ cd byob-profiles-rest-api
 ```
 
 ### 2. 建立 Docker 程序設定檔
@@ -49,7 +49,9 @@ services:
 
 ## （二）初始資料庫程序
 
-### 執行 migrate 指令，令 Django Framework ，透過 Model 物件之設計，對資料庫進行初始之建置工作。
+令 Django Framework ，透過 Model 物件之設計，對資料庫進行初始之建置工作。
+
+### 執行 migrate 指令。
 
 ```commandline
 docker-compose run web python src/profiles_project/manage.py migrate
@@ -57,15 +59,15 @@ docker-compose run web python src/profiles_project/manage.py migrate
 
 ## （三）執行開發中應用系統程序
 
-### 1. 執行啟動應用系統指令
+### 1. 執行啟動應用系統指令。
 
 ```commandline
-docker-compose up
+$ docker-compose up
 ```
 
-### 2. 執行 Web 瀏覽器
+### 2. 啟動 Web 瀏覽器。
 
-### 3. 在網址列輸入 URL 位址
+### 3. 在網址列輸入 URL 位址。
 
 ```commandline
 http://localhost:8000/api
