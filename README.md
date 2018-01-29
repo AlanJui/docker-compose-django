@@ -78,5 +78,5 @@ http://localhost:8000/api
 ---
 
 # 參考
-[Profiles REST API](https://github.com/LondonAppDeveloper/byob-profiles-rest-api)
-REST API providing basic functionality for managing user profiles.
+
+參考網路教學文章：[Profiles REST API](https://github.com/LondonAppDeveloper/byob-profiles-rest-api) -- REST API providing basic functionality for managing user profiles.
