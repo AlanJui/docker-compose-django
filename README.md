@@ -4,10 +4,12 @@
 
 # 系統開發作業
 
-系統開發作業流程，含以下之作業程序：
+系統開發作業流程，由下列之「作業程序」所構成：
  - （一）建置系統開發環境作業程序
  - （二）初始資料庫作業程序
  - （三）檢視開發中系統作業程序
+ 
+ 
 
 ## （一）建置系統開發環境作業程序
 
@@ -19,7 +21,7 @@
 $ cd byob-profiles-rest-api
 ```
 
-### 2. 建立 Docker 程序設定檔
+### 2. 建立 Docker Build 程序設定檔。
 
 建立檔案：Dockerfile ，並輸入以下之內容：
 ```buildoutcfg
@@ -32,7 +34,7 @@ COPY . /code/
 RUN pip install -r requirements.txt
 ```
 
-當執行 docker build 指令時， Docker Engine 將依據 Dockerfile 檔案內容之描述，完成 Docker Image 檔案之建置。
+當執行 docker build 指令時， Docker Engine 將依據 Dockerfile 檔案內容之描述，進行 Docker Image 檔案之建置工作。
 
 已完成建置的 Docker Image 檔案，可用 docker images 指令查詢，藉以確認建置工作的確如預期完成。
 
@@ -51,6 +53,10 @@ services:
     ports:
       - "8000:8000"
 ```
+
+構成「應用系統」該有的「子系統」有那些？子系統之間是否有無相依關係（譬如：啟動 Web 子系統之前， DB 子系統需先備妥）？
+
+透過 docker-compose.yml 檔案，可對待開發中的應用系統進行此類的「結構」描述。
 
 ## （二）初始資料庫作業程序
 
