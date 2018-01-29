@@ -47,9 +47,9 @@ services:
       - "8000:8000"
 ```
 
-## （二）將 Model 升級程序
+## （二）初始資料庫程序
 
-### 執行 migrate 指令
+### 執行 migrate 指令，令 Django Framework ，透過 Model 物件之設計，對資料庫進行初始之建置工作。
 
 ```commandline
 docker-compose run web python src/profiles_project/manage.py migrate
