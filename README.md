@@ -66,21 +66,19 @@ docker-compose run web python src/profiles_project/manage.py migrate
 
 系統開發作業之工作，進展到某一階段，需要檢驗其功能運作；或是觀察其執行之輸出結果時，依照以下之程序步驟進行操作。
 
-### 1. 執行啟動應用系統指令。
+### 1. 執行應用系統啟動指令。
 
 ```commandline
 $ docker-compose up
 ```
 
-### 2. 啟動 Web 瀏覽器。
-
-### 3. 在網址列輸入 URL 位址。
+### 2. 啟動 Web 瀏覽器軟體，並在網址列輸入 URL 網址。
 
 ```commandline
 http://localhost:8000/api
 ```
 
-### 4. 在 Web 瀏覽器觀察輸出結果。
+### 3. 在 Web 瀏覽器觀察輸出結果。
 
 
 
