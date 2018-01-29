@@ -66,6 +66,8 @@ docker-compose run web python src/profiles_project/manage.py migrate
 
 ## （三）執行開發中應用系統程序
 
+系統開發作業之工作，進展到某一階段，需要檢驗其功能運作；或是觀察其執行之輸出結果時，依照以下之程序步驟進行操作。
+
 ### 1. 執行啟動應用系統指令。
 
 ```commandline
