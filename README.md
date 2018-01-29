@@ -8,7 +8,9 @@
 
 ## （一）建置開發環境設定檔程序
 
-### 1. 進入專案根目錄
+為「系統開發作業」進行之流暢，需進行事前籌備工作。透過 Dockerfile 、 docker-compose.yml 兩個檔案的建置工作，用以制定及規範「開發環境（Development）」及「正式環環（Production）」。
+
+### 1. 進入專案根目錄。
 
 ```commandline
 $ cd byob-profiles-rest-api
