@@ -56,7 +56,7 @@ services:
 
 構成「應用系統」該有的「子系統」有那些？子系統之間是否有無相依關係（譬如：啟動 Web 子系統之前， DB 子系統需先備妥）？
 
-透過 docker-compose.yml 檔案，可對待開發的應用系統，進行此「系統結構」性的描述。
+透過 docker-compose.yml 檔案，可對待開發的應用系統，進行此「系統結構」性的描述，而 Docker Compose 則是據此檔案的描述，啟動 Docker Container ；甚或是在 Container 啟動之前，先備妥需要使用的 Docker Image 檔案（可能是自網路下載；或是依據 Dockerfile 的描述自行 Build 建置）。
 
 ## （二）初始資料庫作業程序
 
